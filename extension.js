@@ -14,24 +14,22 @@ function activate(context) {
 	// Register a command for the extension
 	const disposable = vscode.commands.registerCommand('scriptura.scriptura', function () {
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from scriptura!');
+		vscode.window.showInformationMessage('scriptura activated successfully!');
 	});
 
 	// Add the command to the subscriptions
 	context.subscriptions.push(disposable);
 
 	// get the bible data
-	scriptures = readBibleContentFromXL();
+	let scriptures = readBibleContentFromXL();
 
 	// Start the scripture display function
 	generateScriptureEvery30Mins(scriptures);
 }
 
-
 function readBibleContentFromXL(){
 	// Load the workbook
 	const filePath = path.join(__dirname, 'kjv.xlsx');
-	console.log(filePath);
 	const workbook = XLSX.readFile(filePath);
 	const sheetName = workbook.SheetNames[0];
 	const sheet = workbook.Sheets[sheetName];
@@ -50,8 +48,8 @@ function readBibleContentFromXL(){
 		if (row.length >= 2) {
 			// Create an object with the desired columns
 			const obj = {
-				verse: row[0], // Column A
-				content: row[1], // Column B
+				verse: row[0], 
+				content: row[1],
 			};
 			results.push(obj);
 		}
@@ -77,7 +75,7 @@ function generateScriptureEvery30Mins(scriptures) {
 	// Display the first scripture immediately
 	displayRandomScripture();
 
-	// Set an interval to display a scripture every 30 minutes (30 minutes = 1800000 milliseconds)
+	// Set an interval to display a scripture every 1 minute 60_000 milliseconds)
 	setInterval(displayRandomScripture, 1 * 60 * 1000); 
 }
 

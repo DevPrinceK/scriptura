@@ -1,6 +1,7 @@
 {
   "name": "scriptura",
   "displayName": "scriptura",
+  "publisher": "pkaylabs",
   "description": "Scriptura is a VSCode package that displays a scripture every minutes.",
   "version": "0.0.1",
   "engines": {
@@ -36,5 +37,10 @@
   },
   "dependencies": {
     "xlsx": "^0.18.5"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevPrinceK/scriptura.git"
   }
 }
