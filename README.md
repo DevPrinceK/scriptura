@@ -1,5 +1,5 @@
 # scriptura README
-Scriptura is a VSCode package that displays a scripture every minutes.
+Scriptura is a VSCode extension that displays a scripture every minutes.
 
 ## Features
 1. Display scripture every 1 minutes.
