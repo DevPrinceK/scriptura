@@ -7,5 +7,10 @@ Scriptura is a VSCode package that displays a scripture every minutes.
 
 ![alt text](assets/images/screenshot1.png)
 
+![alt text](assets/images/screenshot2.png)
+
+## Clone Repository
+_git clone https://github.com/DevPrinceK/scriptura.git_
+
 ## Dependency Installations
 This extension reads the scriptures from an excel file so you need to install the xlsx package if you're cloning from the github repo.: _npm install xlsx_
