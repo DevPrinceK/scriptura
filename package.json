@@ -2,8 +2,8 @@
   "name": "scriptura",
   "displayName": "scriptura",
   "publisher": "pkaylabs",
-  "description": "Scriptura is a VSCode package that displays a scripture every minutes.",
-  "version": "0.0.2",
+  "description": "Scriptura is a VSCode extension that displays a scripture every minute.",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.96.0"
   },
