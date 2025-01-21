@@ -2,7 +2,7 @@
 Scriptura is a VSCode extension that displays a scripture every minutes.
 
 ## Features
-1. Display scripture every 1 minutes.
+1. Display scripture every 5 minutes.
 2. Scriptures are randomised.
 
 ![alt text](assets/images/screenshot1.png)

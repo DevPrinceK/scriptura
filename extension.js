@@ -75,8 +75,8 @@ function generateScriptureEvery30Mins(scriptures) {
 	// Display the first scripture immediately
 	displayRandomScripture();
 
-	// Set an interval to display a scripture every 1 minute 60_000 milliseconds)
-	setInterval(displayRandomScripture, 1 * 60 * 1000); 
+	// Set an interval to display a scripture every 5 minute 300_000 milliseconds)
+	setInterval(displayRandomScripture, 5 * 60 * 1000); 
 }
 
 
